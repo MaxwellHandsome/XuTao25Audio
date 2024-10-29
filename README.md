@@ -7,6 +7,8 @@ MAGA WIN， TRUMP KING。
 
 
 
+[传送门](http://pg.crazythursday.filegear-sg.me/)
+
 
 
 
