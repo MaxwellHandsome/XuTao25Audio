@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-    echo "Usage: <DayNumber eg.5 is for Day5> <link>"
+    echo "Usage: <Daily Title> <link>"
     exit 1
 fi
 
@@ -9,14 +9,14 @@ day=$1
 link=$2
 
 {
-    echo "#EXTINF:-1, Day$day"
+    echo "#EXTINF:-1, $day"
     echo "$link"
 } >> ./source/xutao.m3u
 
 {
     echo ""
     echo ""
-    echo "Day$day"
+    echo "$day"
     echo "$link"
 } >> ./source/_posts/直链.md
 
