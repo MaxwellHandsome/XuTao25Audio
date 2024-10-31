@@ -1,7 +1,7 @@
 import requests, os, random, re
 from bs4 import BeautifulSoup
 
-# 从喜马拉雅获取播放列表，封装到dictionary里。数据结构：title-playerURL
+# 从喜马拉雅获取播放列表，封装到dictionary里。数据结构：title - playerURL
 def get_url():
     headers = {
         'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36',
