@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-    echo "Usage: <number> <link>"
+    echo "Usage: <DayNumber eg.5 is for Day5> <link>"
     exit 1
 fi
 
