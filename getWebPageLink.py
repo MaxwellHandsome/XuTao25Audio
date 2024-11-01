@@ -40,6 +40,10 @@ latest_webplayerUrl = url_dict[latest_title]
 print("latest: "+latest_title+" -> "+latest_webplayerUrl)
 
 
+if input("Continue?") == "n":
+    exit()
+
+
 # 调用外部api获取直链
 url = 'https://3g.gljlw.com/diy/ximalaya.php?url='+latest_webplayerUrl
 headers = {
