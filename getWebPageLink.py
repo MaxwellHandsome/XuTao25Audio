@@ -37,10 +37,11 @@ print(url_dict)
 # 获取播放列表里最新的音频链接
 latest_title = next(iter(url_dict))
 latest_webplayerUrl = url_dict[latest_title]
-print("latest: "+latest_title+" -> "+latest_webplayerUrl)
+print(\n")
+print("[latest] "+latest_title+" -> "+latest_webplayerUrl)
 
 
-if input("Continue?") == "n":
+if input("Continue?\n\n") == "n":
     exit()
 
 
