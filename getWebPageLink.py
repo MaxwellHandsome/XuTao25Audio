@@ -1,4 +1,4 @@
-import requests, os, random, re
+import requests, os, random, re, sys
 from bs4 import BeautifulSoup
 
 # Fetch playlist from XMLY and save into dictionary. ADT: title - playerURL
@@ -41,7 +41,7 @@ print("\n")
 print("[latest] "+latest_title+" -> "+latest_webplayerUrl)
 if input("Continue?(Y/n)\n") == "n":
     print("Abort.")
-    exit()
+    sys.exit(1)
 
 
 # Grab CDN URL from gljw
@@ -65,10 +65,10 @@ try:
     print("CDN URL fetched!")
     print(cdn_url)
 except Exception as e:
-    print(f"{e} \nfetch error. see debug.html")
+    print(f"{e} \nfetch error, see debug.html")
     with open("debug.html", 'w', encoding='utf-8') as file:
         file.write(fetcher_content)
-    exit()
+    sys.exit(1)
 
 
 # Save to hexo source
