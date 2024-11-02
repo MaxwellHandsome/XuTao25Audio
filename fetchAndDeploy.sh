@@ -39,8 +39,10 @@ read numDay
 echo "git commit -m \"Add Day${numDay} audio.\""
 git commit -m "Add Day${numDay} audio."
 if [ $force_push ]; then
+    echo "git push --force"
     git push --force
 else
+    echo "git push"
     git push
 fi
 echo "Done."
